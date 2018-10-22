@@ -1,0 +1,6 @@
+ifplugin Mail::SpamAssassin::Plugin::BTCBL
+    header   BETAFMB_BTC_BL  eval:check_btcbl('bl.fmb.la', '127.1.1.2')
+    describe BETAFMB_BTC_BL  Message contains BTC address that is BLd
+    tflags   BETAFMB_BTC_BL  net
+    score    BETAFMB_BTC_BL  0.1
+endif
